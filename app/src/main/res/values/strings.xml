@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestBluetooth</string>
+    <string name="my_devices">My Devices</string>
+    <string name="paired_devices">Paired Devices</string>
+    <string name="other_devices">Other Devices</string>
+    <string name="bluetooth">Bluetooth</string>
+</resources>

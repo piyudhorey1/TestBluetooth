@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlack"
+    tools:context=".activity.FormPairActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/txtBluetooth"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/background_corner_dark_grey_12">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bluetooth"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Switch
+            android:id="@+id/toggleBluetooth"
+            android:layout_width="80dp"
+            app:useMaterialThemeColors="true"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintTop_toTopOf="@id/txtBluetooth"
+            app:layout_constraintBottom_toBottomOf="@id/txtBluetooth"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    <TextView
+        android:id="@+id/txtPairedDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_devices"
+        android:textAllCaps="true"
+        android:textSize="15sp"
+        android:textColor="@color/lightGrey"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txtBluetooth"
+        app:layout_constraintStart_toStartOf="@id/txtBluetooth"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcyPairedDevices"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintTop_toBottomOf="@id/txtPairedDevices"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txtOtherDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/other_devices"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:textColor="@color/lightGrey"
+        android:fontFamily="@font/poppins_regular"
+        android:textAllCaps="true"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/rcyPairedDevices"
+        app:layout_constraintStart_toStartOf="@id/txtBluetooth"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rcyOtherDevices"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintTop_toBottomOf="@id/txtOtherDevices"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

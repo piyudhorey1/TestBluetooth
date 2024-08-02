@@ -33,9 +33,9 @@
         <Switch
             android:id="@+id/toggleBluetooth"
             android:layout_width="80dp"
-            app:useMaterialThemeColors="true"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
+            android:hapticFeedbackEnabled="true"
             app:layout_constraintTop_toTopOf="@id/txtBluetooth"
             app:layout_constraintBottom_toBottomOf="@id/txtBluetooth"
             app:layout_constraintEnd_toEndOf="parent"
@@ -81,12 +81,22 @@
         app:layout_constraintTop_toBottomOf="@id/rcyPairedDevices"
         app:layout_constraintStart_toStartOf="@id/txtBluetooth"/>
 
+    <ProgressBar
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@id/txtOtherDevices"
+        app:layout_constraintTop_toTopOf="@id/txtOtherDevices"
+        />
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/rcyOtherDevices"
         android:layout_marginStart="19dp"
         android:layout_marginEnd="19dp"
+        android:background="@drawable/background_corner_dark_grey_12"
         app:layout_constraintTop_toBottomOf="@id/txtOtherDevices"
         android:layout_marginTop="20dp"/>
 

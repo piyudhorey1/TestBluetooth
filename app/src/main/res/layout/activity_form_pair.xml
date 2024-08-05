@@ -30,16 +30,16 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"/>
 
-        <Switch
-            android:id="@+id/toggleBluetooth"
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:hapticFeedbackEnabled="true"
-            app:layout_constraintTop_toTopOf="@id/txtBluetooth"
-            app:layout_constraintBottom_toBottomOf="@id/txtBluetooth"
-            app:layout_constraintEnd_toEndOf="parent"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+<!--        <Switch-->
+<!--            android:id="@+id/toggleBluetooth"-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:hapticFeedbackEnabled="true"-->
+<!--            app:layout_constraintTop_toTopOf="@id/txtBluetooth"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/txtBluetooth"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            tools:ignore="UseSwitchCompatOrMaterialXml" />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     
